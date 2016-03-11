@@ -1,1 +1,1 @@
-
+Programs to solve the Reverse Words and Minimum Scalar Product problems from Google Code Jam.
