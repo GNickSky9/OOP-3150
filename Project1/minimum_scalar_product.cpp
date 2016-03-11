@@ -48,18 +48,18 @@ int main()
     getline(std::cin,fileName);
 
     std::ifstream streamIn;
-	  streamIn.open(fileName);
+    streamIn.open(fileName);
 
-	  if(!streamIn)
+    if(!streamIn)
     {
         std::cout << "Error Opening File.\n";
         return -1;
     }
 
     streamIn >> cases;
-	  streamIn.ignore();
+    streamIn.ignore();
 
-	  while(!streamIn.fail() && cnt != cases+1)
+    while(!streamIn.fail() && cnt != cases+1)
     {
         streamIn >> vecLength;
         streamIn.ignore();
