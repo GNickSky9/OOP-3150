@@ -74,7 +74,7 @@ int main()
             streamIn >> numb;
             vec2.push_back(numb);
         }
-        outputfile << "Case #" << cnt << ": " << findSmallestScalerProduct(vec1,vec2) << "\n";
+        outputfile << "Case #" << cnt << ": " << findSmallestScalarProduct(vec1,vec2) << "\n";
         vec1.clear();
         vec2.clear();
         streamIn.ignore();
