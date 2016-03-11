@@ -18,7 +18,7 @@ void ascend_sort(iter beg, iter end)
 }
 
 template <class container>
-long long int findSmallestScalerProduct(container x, container y)
+long long int findSmallestScalarProduct(container x, container y)
 {
     long long int zero = 0;
 
