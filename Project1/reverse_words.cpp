@@ -26,31 +26,30 @@ int main()
     std::string fileName;
     std::string word;
     int cases = 0;
-	int cnt = 1;
+    int cnt = 1;
 
     std::cout << "Enter Input File Name: ";
     getline(std::cin,fileName);
 
     std::ifstream streamIn;
-	streamIn.open(fileName);
+    streamIn.open(fileName);
 
-	if(!streamIn)
+    if(!streamIn)
     {
         std::cout << "Error Opening File.\n";
         return -1;
     }
 
     streamIn >> cases;
-	streamIn.ignore();
+    streamIn.ignore();
 
     while(!streamIn.fail() && cnt != cases+1)
-	{
-		getline(streamIn,sentence);
-		print_reverse(sentence,cnt);
-		outputfile << "\n";
-		++cnt;
-	}
+    {
+	getline(streamIn,sentence);
+	print_reverse(sentence,cnt);
+	outputfile << "\n";
+	++cnt;
+    }
 
     return 0;
 }
-
