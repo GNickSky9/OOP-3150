@@ -8,11 +8,11 @@ import javax.swing.*;
 @SuppressWarnings("serial")
 public class JMagicka extends JPanel implements ActionListener
 {
-    private PrintWriter pw;			// - For Outputting To File.
-    private Scanner in;				// - For Reading From File.
+    private PrintWriter pw;		// - For Outputting To File.
+    private Scanner in;			// - For Reading From File.
     public Vector<String> combo;	// - First Two Characters = 2 Base Elements, 3rd Character = What The Latter Form.
     public Vector<String> oppose;	// - Two Elements That Oppose Each Other.
-    public String spell;			// - n-length String Of Elements We Are To Invoke.
+    public String spell;		// - n-length String Of Elements We Are To Invoke.
     public Vector<Character> eleList;	// - List Of Our Elements.
     
     // Default Constructor.
