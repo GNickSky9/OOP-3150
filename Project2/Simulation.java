@@ -15,12 +15,12 @@ public class Simulation extends JPanel implements ActionListener
 	public boolean isFinished;	// Check If We Are Done With The Sim.
 	private String paintStr;	// Used In Paint Function
 	public String sequence;		// Current Sequence
-	public Scanner inp;			// Used To Read Input For Sim.
+	public Scanner inp;		// Used To Read Input For Sim.
 	public static Scanner inpTest;	// Used To Read Input In The Beginning To Fill Vector Of Sequences
 	public int numb;		// Number Of Moves In Current Sequence
 	public int currSeq;		// Position In Current Sequence
 	public int cases;		// Number Of Cases For The Sim.
-	public int currCase;	// Current Case
+	public int currCase;		// Current Case
 	public Timer tm;		// Timer That Drives The Sim.
 	public Robot blBot;		// Blue Robot
 	public Robot ojBot;		// Orange Robot
@@ -33,20 +33,20 @@ public class Simulation extends JPanel implements ActionListener
 	{
 		setBackground(Color.BLACK);
 		blPushed = false;
-        ojPushed = false;
-        isFinished = false;
-        currSeq = 0;
-        currCase = 0;
-        numb = -1;
+        	ojPushed = false;
+        	isFinished = false;
+        	currSeq = 0;
+        	currCase = 0;
+        	numb = -1;
 		sequence = new String();
 		paintStr = new String();
 		buttons = new Hallway();
 		blBot = new Robot();
-        ojBot = new Robot();
-        tm = new Timer(5000/30, this);        
-        fill();
+        	ojBot = new Robot();
+        	tm = new Timer(5000/30, this);        
+        	fill();
         
-        try
+        	try
 		{
 			Path file = Paths.get("small.txt");
 			inp = new Scanner(file);
@@ -58,7 +58,7 @@ public class Simulation extends JPanel implements ActionListener
 			return;
 		}
         
-        cases = inp.nextInt();
+        	cases = inp.nextInt();
 	}
 	
 	// Initialize Coordinates And Dimensions Of Both Robots
