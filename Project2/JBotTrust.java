@@ -17,7 +17,7 @@ public class JBotTrust
 		Simulation sim = new Simulation();
 		frame.add(sim, BorderLayout.CENTER);		
 		frame.setVisible(true);
-		
+		 
 		sim.start();
 	}
 
